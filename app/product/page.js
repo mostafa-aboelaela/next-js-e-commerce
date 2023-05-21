@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client"
 import Image from "next/image"
 import useCart from "../(store)/store"
@@ -31,7 +32,7 @@ export default function ProductPage(props) {
         <div className="flex flex-col p-4">
             <div className="grid grid-cols-1 md:grid-cols-2 w-full max-w-[1000px] mx-auto">
                 <div className="md:p-2 md:shadow">
-                    <Image src={productInfo.images[0]} alt={name} className="w-full h-full object-cover" />
+                    <img src={productInfo.images[0]} alt={name} className="w-full h-full object-cover" />
                 </div>
                 <div className="flex flex-col gap-2 p-4">
                     <div className="flex md:flex-col md:items-start text-xl  items-center justify-between gap-2">
