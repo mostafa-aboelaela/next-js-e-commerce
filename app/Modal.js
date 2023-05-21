@@ -39,6 +39,7 @@ export default function Modal() {
                 </div>
                 <div className='p-4 overflow-scroll flex-1 flex flex-col gap-4'>
                     {cartItems.length === 0 ? (
+                        // eslint-disable-next-line react/no-unescaped-entities
                         <p>There is nothing in your cart :'(</p>
                     ) : (
                         <>
